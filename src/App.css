@@ -20,7 +20,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 90vh;
 }
 
 .dark-overlay {
@@ -41,8 +41,68 @@ nav {
     font-size: 1.2rem;
 }
 
-.dark-overlay button {
-    padding: 4px 16px;
+.cta-btn {
+    padding: 8px 16px;
     background-color: #FF7402;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About Section */
+
+.about-section {
+    height: 80vh;
+    margin: 5em 3em;
+}
+
+.about-container {
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.about-container p:nth-child(3),
+p.about-container p:nth-child(4) {
+    margin: 2em 0;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+}
+
+.about-container .cta-btn {
+    margin: 1em 0;
+}
+
+.class-section {
+    display: flex;
+    padding: 5em 3em;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000000e3;
+    color: #ccc;
+}
+
+.class-card {
+    border: 1px solid #ccc;
+    width: fit-content;
+    padding: 1em 3em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    border-radius: 5px;
+
+}
+
+.class-section h2 {
+    margin-bottom: 2em;
+    font-size: 1.8rem;
+}
+
+.class-container {
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.class-container p {
+    margin-bottom: 2em;
 }

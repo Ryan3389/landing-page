@@ -5,7 +5,7 @@ function HeroPage() {
                 <article>
                     <h1>Main Hero Text</h1>
                     <p>Sub Hero Text</p>
-                    <button>Hero CTA</button>
+                    <button className="cta-btn">Hero CTA</button>
                 </article>
             </div>
         </section>
