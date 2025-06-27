@@ -1,30 +1,29 @@
+import boxing from '../images/boxing.jpg'
+import HIIT from '../images/HIIT.jpg'
+import military from '../images/military.jpg'
+import ClassCard from '../components/ClassCard'
 function ClassPage() {
     return (
         <section className="class-section">
-            <div className="class-container">
-                <h2>Checkout our Classes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic dolores deserunt accusantium autem perspiciatis! Amet magnam laborum enim eum aliquid.</p>
-                {/* Move the articles into a component */}
-                <article className="class-card">
-                    <h3>Workout Class</h3>
-                    <p>Calories Burned</p>
-                    <p>Description</p>
-                </article>
-                <article className="class-card">
-                    <h3>Workout Class</h3>
-                    <p>Calories Burned</p>
-                    <p>Description</p>
-                </article>
-                <article className="class-card">
-                    <h3>Workout Class</h3>
-                    <p>Calories Burned</p>
-                    <p>Description</p>
-                </article>
-
-                <button className="cta-btn">Class CTA</button>
-            </div>
+            <h2>Check Out Our Classes</h2>
+            <ClassCard
+                classImg={boxing}
+                classTitle="Boxing Class"
+                classDesc="High-intensity training to build strength and confidence."
+            />
+            <ClassCard
+                classImg={HIIT}
+                classTitle="HIIT Class"
+                classDesc="High-intensity training to build strength and confidence."
+            />
+            <ClassCard
+                classImg={military}
+                classTitle="Military Fitness Class"
+                classDesc="High-intensity training to build strength and confidence."
+            />
         </section>
     )
 }
+
 
 export default ClassPage
