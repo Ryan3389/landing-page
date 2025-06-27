@@ -8,7 +8,7 @@ function AboutPage() {
 
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi animi tempora dolorem ad omnis cumque. Recusandae consequuntur magni expedita harum.</p>
 
-                <button className="cta-btn">About CTA</button>
+                <button className="about-cta">About CTA</button>
             </div>
         </section>
     )

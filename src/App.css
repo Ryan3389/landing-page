@@ -41,12 +41,15 @@ nav {
     font-size: 1.2rem;
 }
 
-.cta-btn {
+.cta-btn,
+.about-cta,
+.class-cta {
     padding: 8px 16px;
     background-color: #FF7402;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 /* About Section */
@@ -76,14 +79,6 @@ p.about-container p:nth-child(4) {
 
 
 /* Class Section */
-
-/* .class-section {
-    display: flex;
-    padding: 5em 3em;
-    justify-content: center;
-    min-height: 100vh;
-    color: #ccc;
-} */
 
 .class-section {
     min-height: 100vh;
@@ -117,11 +112,115 @@ p.about-container p:nth-child(4) {
     color: #222;
     width: 100%;
     z-index: 2;
-    /* backdrop-filter: blur(4px); */
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
-.class-section h2 {
+
+
+.class-section h2,
+.membership-section h2 {
     text-align: center;
     margin-bottom: 1em;
     font-size: 1.8rem;
+}
+
+/* Membership Page */
+.membership-section {
+    min-height: 100vh;
+    padding: 5em 3em;
+}
+
+.membership-content {
+    background: #222;
+    color: #ccc;
+    padding: 1em;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    /* About Section */
+    .about-container {
+        font-size: 1.3rem;
+    }
+
+    .about-section h2 {
+        font-size: 2.1rem;
+        margin-bottom: 0.5em;
+    }
+
+    .about-cta {
+        font-size: 1.3rem;
+    }
+
+    /* Class Section */
+    .class-section h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 767px) {
+    .about-section {
+        height: 70vh;
+    }
+
+    .about-container {
+        font-size: 1.5rem;
+    }
+
+    .about-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-cta {
+        font-size: 1.5rem;
+    }
+
+    /* Class Section */
+    .class-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .class-content {
+        font-size: 0.95rem;
+    }
+
+    .class-section h2 {
+        font-size: 2.125rem;
+    }
+
+    .class-cta {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+
+    .membership-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .membership-content {
+        font-size: 1.1rem;
+        padding: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .class-content {
+        font-size: 1.1rem;
+    }
+
+    .class-cta {
+        font-size: 1rem;
+        padding: 5px 10px;
+        margin: 0.3em;
+    }
 }
